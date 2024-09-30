@@ -1,0 +1,256 @@
+.bigContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // align-items: flex-start;
+
+  border-radius: 15px;
+  background-color: rgb(30 28 47);
+  margin-top: 15px;
+
+  position: relative;
+  z-index: 1;
+}
+.nameANDIcon {
+  display: flex;
+  align-items: center;
+}
+.iconNew {
+  border-radius: 15px;
+}
+.serName {
+  display: flex;
+  font-weight: bold;
+  justify-content: start;
+}
+.treeO {
+  display: flex;
+  justify-content: start;
+  font-size: 12px;
+  width: 38px;
+  min-width: 38px;
+  margin-left: 0.5rem;
+}
+.treeT {
+  display: flex;
+  justify-content: start;
+  width: 62px;
+  min-width: 62px;
+  font-size: 12px;
+}
+.treeF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 56px;
+  min-width: 56px;
+}
+.oneServer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  min-height: 28px;
+
+  border-bottom: 1px solid;
+}
+.oneServertoo {
+  display: flex;
+
+  align-items: center;
+  margin: 2px;
+}
+
+.micro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 240px;
+
+  border-radius: 10px;
+  background-color: rgba(25, 23, 38, 0.8);
+  margin-top: 250px;
+
+  position: relative;
+  z-index: 1;
+}
+// .serContainer{
+//   display: flex;
+//   align-items: center;
+//    flex-direction: column;
+
+// }
+.langLig {
+  display: flex;
+}
+.btnLig {
+  border-radius: 20%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.btnLang {
+  height: 34px;
+  min-width: 35px;
+  border-radius: 20%;
+
+  border-color: none;
+  background-color: rgba(25, 23, 38, 0.8);
+  color: azure;
+  cursor: pointer;
+  border: 1px solid;
+}
+.minContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: rgb(30, 28, 47, 0.9);
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+
+  position: relative;
+  z-index: 1;
+}
+.immaCon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  z-index: 0;
+  position: absolute;
+}
+.immaL2 {
+  width: 100%;
+  height: 600px;
+}
+// .dateContainer{
+//   display: flex;
+//     flex-wrap: wrap;
+// }
+.croniclesLane {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bigbigContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  // background-color: rgb(20, 18, 23);
+  background-color: #18171d;
+  // RGB (25,23,26), HEX: #19171A
+}
+.oneContainer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.tooContainer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.burger-menu {
+  display: none;
+  /* Дополнительные стили для кнопки бургер */
+}
+.info h3,
+p,h5,a{
+ 
+display: flex;
+  color: white;
+  
+  text-align: left;
+}
+.info a {
+  align-items: center;
+  font-weight: bold;
+
+}
+.info {
+  
+  background-color: #18171d;
+ max-width: 1100px;
+  min-height: 600px;
+  z-index: 10;
+}
+
+
+@media (max-width: 1000px) {
+  /* Скрываем навигационную панель */
+
+  /* Скрываем навигационную панель */
+  .navi {
+    display: none;
+  }
+
+  /* Показываем кнопку бургер в верхней части сайта */
+  .burger-menu {
+    display: block;
+    // position: absolute;
+    right: 0;
+
+    background-color: black;
+    cursor: pointer; /* Изменяем курсор, чтобы показать, что кнопка кликабельна */
+    padding: 2px; /* Добавляем немного пространства вокруг иконки */
+    /* Дополнительные стили для позиционирования и внешнего вида */
+  }
+
+  .hidden-component {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .burger-menu div {
+    width: 28px; /* Ширина линии */
+    height: 2px; /* Высота линии */
+    background-color: white; /* Цвет линии */
+    margin: 5px 0; /* Расстояние между линиями */
+    transition: 0.4s; /* Плавное изменение при наведении или клике */
+  }
+  .burger-menu.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  .burger-menu.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+}
+@media (max-width: 700px) {
+  .bigbigContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+  .bigContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .serContainer {
+    color: black;
+    background-color: black;
+  }
+}
+@media (max-width: 450px) {
+  .minContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .micro {
+    margin-left: 110px;
+    margin-top: 0px;
+  }
+}
